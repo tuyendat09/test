@@ -16,6 +16,9 @@ export default function useGetProduct({
     useState<Product[]>(initialData);
   const [currPage, setCurrPage] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>(initialTotalPages ?? 0);
+  
+
+  console.log('test');
 
   // Hàm chưa tối ưu k xài
   const handleFetchProduct = useCallback(async () => {
